@@ -1,17 +1,28 @@
 #' Retrieve Latitude and Longitude for a Given Location
 #'
-#' This function takes a location string, converts spaces to '+', and retrieves latitude and longitude coordinates for that location using the Nominatim API from OpenStreetMap.
+#' This function takes a location string, converts spaces to '+', and retrieves
+#' latitude and longitude coordinates for that location using the Nominatim
+#' API from OpenStreetMap.
 #'
-#' @param location A character string representing the location for which latitude and longitude are to be retrieved.
-#' @return A list containing the latitude and longitude coordinates of the given location.
+#' @param location A character string representing the location for which
+#'   latitude and longitude are to be retrieved.
+#' @return A list containing the latitude and longitude coordinates of the
+#'   given location.
 #' @examples
 #' \dontrun{
 #'   result <- lat_long("New York City")
 #'   print(result)
 #' }
 #' @export
-#' @import httr
+#' @import tidyverse
+#' @import magrittr
+#' @import leaflet
 #' @import rvest
+#' @import knitr
+#' @import dplyr
+#' @import httr
+#' @import jsonlite
+#' @import shiny
 
 lat_long<-function(loca_tion)
 {
