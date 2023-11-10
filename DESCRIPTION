@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Priya Patil and Sangeeth Menon
 Maintainer: Priya Patil <pripa640@student.liu.se>
 Description: This package provides functions to retrieve latitude and longitude coordinates for a given location using external APIs. The main function, `lat_long()`, takes a location string as input and returns a list containing the latitude and longitude coordinates of the specified location. The package relies on services such as Nominatim from OpenStreetMap to fetch the geographic coordinates.
-License: GPL-3 
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
